@@ -11,10 +11,15 @@ function variableExamples() {
   console.log("Angajat:", employed);
 
   var Skills = ["html", "css"];
-  console.debug("tipul variabile skills:", typeoff, Skills);
-  var job = document.getElementById("job-title");
-  console.warn("job:", job);
-  console.info(typeof job);
+  console.debug("tipul variabile skills:", typeof Skills);
 }
 
-variableExamples();
+function updateTitle(title) {
+  var job = document.getElementById("job-title");
+  console.warn("job:", job, title);
+  console.info(typeof job);
+  job.innerHTML = title;
+}
+
+// variableExamples();
+// updateTitle("Web Developer");
