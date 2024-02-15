@@ -9,15 +9,22 @@
   </head>
   <body>
     <header>
-      <h1>Costea Mihaela.</h1>
-      <img height="100" height="100" src="images/CV.jpeg" alt="selfie" />
-      <p id="job-title">Economist @ Terapia</p>
+      <div style="display: flex">
+        <div>
+          <img height="100" height="100" src="images/CV.jpeg" alt="selfie" />
+        </div>
+
+        <div>
+          <h1>Costea Mihaela</h1>
+          <p id="job-title">Economist @ Terapia</p>
+        </div>
+      </div>
 
       <ul id="top-menu-bar">
-        <li><a href="#" class="active">HOME </a></li>
+        <li><a href="#">HOME </a></li>
         <li><a href="#">Skills </a></li>
-        <li><a href="#">Projects </a></li>
-        <li><a href="#">Languages </a></li>
+        <li><a href="#" class="active">Projects </a></li>
+        <li><a href="#" onclick="showLanguages()">Languages </a></li>
       </ul>
     </header>
     <section id="content">
@@ -51,30 +58,38 @@
         </section>
       </div>
       <div id="main">
-        <h2>Home</h2>
-        <p>Welcome...</p>
+        <div style="display: none">
+          <h2>Home</h2>
+          <p>Welcome...</p>
+        </div>
 
-        <h2>Skills</h2>
-        <ul>
-          <li class="favorite">HTML</li>
-          <li>CSS</li>
-          <li class="favorite">JS</li>
-        </ul>
+        <div style="display: none">
+          <h2>Skills</h2>
+          <ul>
+            <li class="favorite">HTML</li>
+            <li>CSS</li>
+            <li class="favorite">JS</li>
+          </ul>
+        </div>
 
-        <h2>Projects</h2>
-        <p>.....</p>
-        
-        <h2>Known Languages</h2>
-        <table border="1">
-          <tr>
-            <td>Romanian</td>
-            <td>Native</td>
-          </tr>
-          <tr>
-            <td>English</td>
-            <td>Profesional</td>
-          </tr>
-        </table>
+        <div id="projects">
+          <h2>Projects</h2>
+          <p>.....</p>
+        </div>
+
+        <div style="display: none" id="languages">
+          <h2>Known Languages</h2>
+          <table border="1">
+            <tr>
+              <td>Romanian</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Profesional</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </section>
     <footer>
